@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<subject>
+    <TAM>
+        <instance episode="06">
+            <utterance>I will see... I've seen that, clear as day.
+                <precedent>What you are making has limitless potential to change the world.</precedent>
+            </utterance>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~9" aux="be">I will see</actual>
+            <correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="14~23" aux="have">I've seen</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>Because I will believe the work you're doing was... will change the world for the better.</utterance>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="8~21" aux="will">I will believe</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">I believe</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>Because I will believe the work you're doing was... will change the world for the better.</utterance>
+            <actual explicit="false" tense="past" aspect="unknown" voice="unknown" targetspan="45~47" aux="be">[expsubj] was [impverb]</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="52~62">[impsubj] will change</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>It will go without saying that you couldn't spread that information from this span... room.</utterance>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~9" aux="will">It will go</actual>
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">It goes</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>It will go without saying that you couldn't spread that information from this span... room.</utterance>
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="31~49" aux="could not">You couldn't spread</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active" aux="can not">You can't spread</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>You're to be thanked, Chet.</utterance>
+            <actual explicit="true" tense="future" aspect="perfect" voice="passive" targetspan="0~19" aux="be to be">You're to be thanked</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">Thank you</correct>  <!--special case-->
+        </instance>
+        <instance episode="06">
+            <utterance>I will be able to... I can talk on my own.</utterance> <!--treating "be able to" as aux here-->
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~16" aux="will be able to">I will be able to [talk]</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="21~40" aux="can">I can talk</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>I needed you to get the right answer.</utterance>
+            <actual explicit="true" tense="past" aspect="perfect" voice="active" targetspan="0~11">I needed [expobj]</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">I need [expobj]</correct>
+        </instance>
+        <instance episode="09">
+            <utterance>And, and we did- we will do- we did- Whickman will- are you? Are you?</utterance> <!--whickman-->
+            <actual explicit="true" tense="past" aspect="perfect" voice="active" targetspan="0~11">I needed [obj]</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">I need [obj]</correct>
+        </instance>
+        <instance episode="10-1">
+            <utterance>I did what what I have to do. Have to - Had to do.
+                <precedent>I may have come on a little strong to Hank Cornish, but...</precedent>
+            </utterance>
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="16~27">I have to do</actual>
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="30~36">[impsubj] Have to [verb]</actual>
+            <correct explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="40~48">[impsubj] Had to do</correct> <!--check aspect-->
+        </instance>
+        <instance episode="10-1">
+            <utterance>We'll have moving there - moved there...</utterance>
+            <actual explicit="true" grammatical="false" tense="future" aspect="perfect/progressive" voice="active" targetspan="0~23" aux="will have">We'll have moving there</actual> <!--compound aspect?-->
+            <correct explicit="true" tense="future" aspect="perfect" voice="active" targetspan="26~36" aux="will have">[impsubj] [aux] moved there</correct> <!--check aspect-->
+        </instance>
+        <instance episode="10-1">
+            <utterance>it needs to be make... Making... Have to be made ready.
+                <precedent>In two years' time we'll be there and</precedent> <!--future tense from context? no-->
+            </utterance> <!--definitely check this one-->
+            <actual explicit="true" grammatical="false" tense="present" aspect="unknown" voice="passive" targetspan="0~18" aux="need to be">it needs to be make</actual> 
+            <actual explicit="true" tense="future" aspect="perfect/progressive" voice="active" targetspan="22~28">[impsubj] Making</actual> 
+            <correct explicit="true" grammatical="false" tense="present" aspect="unmarked" voice="passive" targetspan="26~36" aux="have to be">[impsubj] Have to be made ready</correct> 
+        </instance>
+        <instance episode="10-1">
+            <utterance>I was fine! I... I am fine! I will be fine. I...</utterance> 
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="0~9">I was fine</actual> <!--copula not counted as aux-->
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="17~25">I am fine</actual> 
+            <correct explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="28~41" aux="will">I will be fine</correct>
+        </instance>
+        <instance episode="10-1">
+            <utterance>You needed to - need to talk to... Talked to... Gonna talk -</utterance> 
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="0~9">You needed to [impverb]</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="16~27">[impsubj] need to talk</actual>            
+        </instance>
+        <instance episode="10-1">
+            <utterance>You needed to - need to talk to... Talked to... Gonna talk -</utterance> 
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="24~30" aux="to">[impsubj] to talk to...</actual> <!--impsubj?-->
+            <actual explicit="true" tense="unknown" aspect="perfect" voice="active" targetspan="35~43">[impsubj] Talked to...</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="48~57" aux="gonna">[impsubj] Gonna talk</actual>            
+        </instance>
+        <instance episode="10-1">
+            <utterance>And he knows we know, we knew, we will know all the plans, and -
+                <precedent>No! Don't you see? He knows we're coming.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="13~19">we know [impobj]</actual>
+            <actual explicit="true" tense="past" aspect="perfect" voice="active" targetspan="22~28">we knew [impobj]</actual>
+            <correct explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="31~42" aux="gonna">we will know [expobj]</actual>
+        </instance>
+        <instance episode="10-1">
+            <utterance>We've been... Will be, we will be... We've got be ready for him, ready for him...</utterance> 
+            <actual explicit="true" tense="present" aspect="perfect progressive" voice="active" targetspan="0~9" aux="have">We've been [impobj]</actual>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="14~20">[impsubj] will be [impobj]</actual>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="23~32">we will be [impobj]</actual>
+            <correct explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="37~48" aux="have got">We've got be ready</actual> <!--"got to" = necessity-->
+        </instance>
+    </TAM>
+    <lexical>
+        <instance episode="06">
+            <utterance>It will go without saying that you couldn't spread that information from this span... room.</utterance>
+            <actual explicit="true" targetspan="78~81">span</actual>
+            <correct explicit="true" targetspan="86~90">room</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>Help what's wrong with my thinking.</utterance>
+            <actual explicit="true" targetspan="25-32">thinking</actual>
+            <correct explicit="false">thoughts</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>But only where you find the right answer.
+                <precedent>We've talked about this.</precedent>
+            </utterance>
+            <actual explicit="true" targetspan="9~13">where</actual>
+            <correct explicit="false">when</correct>
+        </instance>
+        <instance episode="06">
+            <utterance>Next to then don't speak to anybody.
+                <precedent>But only where you find the right answer.</precedent>
+            </utterance>
+            <actual explicit="true" targetspan="0~6">Next to</actual>
+            <correct explicit="false">until</correct>
+        </instance>
+    </lexical>
+    <omission>
+        <instance episode="06">
+            <utterance>Help what's wrong with my thinking.</utterance>
+            <actual targetspan="4" missing="V"></actual> <!--the space between words where the word should go-->
+            <correct>figure out<correct>
+        </instance>
+        <instance episode="06">
+            <utterance>Not acceptable.</utterance>
+            <actual targetspan="0" missing="S V"></actual> <!--the space between words where the word should go-->
+            <correct>That is<correct>
+        </instance>
+        <instance episode="10-1">
+            <utterance>Whickman, you need to plan. Plan for everything. Everything you think of, every contingency. He's got some way around. </utterance>
+        </instance>
+    </omission>
+</subject>
