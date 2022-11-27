@@ -5,7 +5,7 @@ With that said, this corpus was inspired by GRAEC (Kasselimis et al. 2020) and t
 
 # Butterfly Syndrome Speech Error Dataset (BSSED)
 ## Introduction
-Butterfly Syndrome (BS) is one of the most common and most dangerous occupational hazards in the United States Office of Developed Anomalous Resources (ODAR). Its most identifiable symptom is tense-specific aphasia. We have compiled examples of the resultant speech errors into the Butterfly Syndrome Speech Error Dataset (BSSED) in the hopes that the data therein will be able to inform clinicians identify and researchers study BS.
+The degenerative neurological disorder known as Butterfly Syndrome (BS) is directly caused by exposure to time travel and to non-causal structures in general. As such, it is one of the most common and most dangerous occupational hazards in the United States Office of Developed Anomalous Resources (ODAR). Its most identifiable symptom is tense-specific aphasia. We have compiled examples of the resultant speech errors into the Butterfly Syndrome Speech Error Dataset (BSSED) in the hopes that the data therein will be able to inform clinicians identify and researchers study BS.
 
 ## Data
 In 1955, Morales and Sharma (1955) began broadcasting a series of audio recordings that had been disseminated from the Blackroom from its anchor point in 1943. Recall that BS is a common hazard at ODAR; since these recordings had all passed through ODAR's communications nexus, then, it should not be surprising that many of them include speech from individuals with BS. 
@@ -20,20 +20,52 @@ All of the data in this corpus are freely available. Anyone who listens to the b
 Data has been collated into XML files, one per subject. In our pilot work, we identified three types of speech errors tense-aspect-mood (TAM), lexical, and omission. Each subject's file contains one section for each of these categories.
 
 ### Tense-Aspect-Mood
-Erroneous utterances are listed by instance. These are then sorted by type, as described below. An instance is structured as follows
+Erroneous utterances are listed by instance. These are then sorted by type, as described below. An instance is structured as follows:
+
+* Instance
+    * "episode": the "episode" of Morales and Sharma’s broadcast that the instance appears in
+    * Utterance: the sentence in question.
+        * Precedent: if relevant, the preceding sentence or phrase.
+    * Actual: the incorrect phrase uttered. There may be more than one of these.
+        * "explicit": whether the full utterance is present
+        * "tense": past, present, future, or unknown
+        * "aspect": unmarked, perfect, progressive, unknown, or some combination of the above
+        * "voice": active, passive, or unknown
+        * "target span": character span of the target phrase within the utterance
+        * "aux": the auxiliary verbs, modals, negatives, and infinitival "to"s used in the target phrase
+    * Correct: the correct phrase. This may not actually be uttered.
+        * All features are the same as defined for Actual above
 
 ```
-instance episode=06
-  utteranceI will see... I've seen that, clear as day.
-    precedentWhat you are making has limitless potential to change the world.precedent
-  utterance
-  actual explicit=true tense=future aspect=unmarked voice=active targetspan=0~9 aux=beI will seeactual
-  correct explicit=true tense=present aspect=perfect voice=active targetspan=14~23 aux=haveI've seencorrect
-instance
+<instance episode="06">
+	<utterance>I will see... I've seen that, clear as day.
+		<precedent>What you are making has limitless potential to change the world.</precedent>
+	</utterance>
+	<actual explicit="true" tense="future"    aspect="unmarked" voice="active" targetspan="0~9" aux="be">I will see</actual>
+	<correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="14~23" aux="have">I've seen</correct>
+</instance>
  ```
  
  ### Lexical and Omission
  
+While most examples consisted of tense-aspect-mood errors, a large minority involved other lexical mistakes.
+In these examples, subjects replaced words with less fitting ones (lexical errors) or omitted them entirely
+(omission errors). While omission errors are probably a subtype of lexical errors, there is no neat annotation
+schema that describes both adequately.
+
+## Lexical
+An instance of a lexical error is structured as follows:
+
+* Instance
+    * "episode": the "episode" of Morales and Sharma’s broadcast that the instance appears in
+    * Utterance: the sentence in question.
+        * Precedent: if relevant, the preceding sentence or phrase.
+    * Actual: the incorrect phrase uttered.
+        * "explicit": whether the full phrase is present.
+        * "targetspan": the character span of the target phrase.
+    * Correct: the correct phrase. This is usually not uttered.
+        * "explicit": whether the full phrase is present. As noted directly above, this is usually false.
+
  ```
  instance episode=06
     utteranceBut only where you find the right answer.
@@ -44,6 +76,16 @@ instance
  instance
 ```
  
+### Omission
+* Instance
+    * "episode": the "episode" of Morales and Sharma’s broadcast that the instance appears in
+    * Utterance: the sentence in question.
+        * Precedent: if relevant, the preceding sentence or phrase.
+    * Actual: the incorrect phrase uttered.
+        * "targetspan": the space where the omitted word should have been uttered. If the gap is at the beginning of a sentence, this is 0.
+        * "missing": the constituents that are omitted. This is formatted as some combination of S (subject), V (verb), O (object), or PP (prepositional phrase). If more than one constituent is missing, they are separated with a space so that they may easily be separated in preprocessing. Other constituents have not been observed to be omitted thus far.
+    * Correct: an approximately correct phrase, chosen by the annotator
+
 ```
 instance episode=06
     utteranceNot acceptable.utterance
