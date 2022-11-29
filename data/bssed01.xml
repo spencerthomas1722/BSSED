@@ -9,6 +9,10 @@
             <correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="14~23" aux="have">I've seen</correct>
         </instance>
         <instance episode="06">
+            <utterance>I'm calling in the last few favors I had to convince them to keep me on</utterance>
+            <!--unsure if this should be present or past tense. based on context, probably past-->
+        </instance>
+        <instance episode="06">
             <utterance>Because I will believe the work you're doing was... will change the world for the better.</utterance>
             <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="8~21" aux="will">I will believe</actual>
             <correct explicit="false" tense="present" aspect="unmarked" voice="active">I believe</correct>

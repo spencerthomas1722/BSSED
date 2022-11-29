@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<subject>
+    <TAM>
+        <instance episode="07">
+            <utterance>But... will grow since then. Have grown since then?</utterance> <!--revisit-->
+            <actual explicit="false" tense="future" aspect="unmarked" voice="active" targetspan="7~15" aux="will">[implsubj] will grow</actual>
+            <correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="29~38" aux="have">[implsubj] Have grown</correct> 
+        </instance>
+        <instance episode="07">
+            <utterance>Now, I only mostly want to have run away... I mean, I just only mostly want to run away.
+                <precedent>But... will grow since then. Have grown since then?</precedent>
+            </utterance>
+            <actual explicit="true" tense="present" aspect="perfect infinitive" voice="active" targetspan="5~39" aux="want to have">I [adv] want to have run away</actual>
+            <correct  explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="52~86" aux="want to">I [adv] want to run away.</correct> 
+        </instance>
+        <instance episode="10-2"> <!--note: both instances from this episode are from FUTURE [subject 00], from 1967.-->
+            <utterance>I'd love to answer every question you have, and god damn do I know how frustrating this will be... is... dammit, it's starting to sink in.</utterance> <!--revisit-->
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="83~94" aux="will">this will be</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="124~125">[implsubj] is [impobj]</correct> 
+        </instance>
+        <instance episode="10-2"> <!--note: both instances from this episode are from FUTURE [subject 00], from 1967-->
+            <utterance>There will... there was… there is...</utterance>
+            <actual explicit="false" tense="future" aspect="unmarked" voice="active" targetspan="0~9" aux="will">There will [verb] [impobj]</actual>
+            <actual explicit="false" tense="past" aspect="unknown" voice="active" targetspan="14~22" >there was [impobj]</actual>
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="25~32">there is [impobj]</correct> 
+        </instance>
+    </TAM>
+    <lexical>
+    </lexical>
+    <omission>
+    </omission>
+</subject>
