@@ -19,13 +19,35 @@
             <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="124~125">[implsubj] is [impobj]</correct> 
         </instance>
         <instance episode="10-2"> <!--note: both instances from this episode are from FUTURE [subject 00], from 1967-->
-            <utterance>There will... there was… there is...</utterance>
+            <utterance>There will... there was... there is...</utterance>
             <actual explicit="false" tense="future" aspect="unmarked" voice="active" targetspan="0~9" aux="will">There will [verb] [impobj]</actual>
             <actual explicit="false" tense="past" aspect="unknown" voice="active" targetspan="14~22" >there was [impobj]</actual>
             <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="25~32">there is [impobj]</correct> 
         </instance>
     </TAM>
     <lexical>
+        <instance episode="11">
+            <utterance>They're not... uh... crazy dreams, you quack!
+                <precedent>All right, I want to really dig into the source of these delusions.</precedent>
+            </utterance>
+            <actual explicit="true" targetspan="17~28">crazy dreams</actual>
+            <correct explicit="false">delusions</correct> <!--present in the past sentnce-->
+        </instance>
+        <instance episode="11">
+            <utterance>There was this thing, the time box and it...</utterance>
+            <actual explicit="true" targetspan="26~31">time box</actual>
+            <correct explicit="false">timepiece</correct>
+        </instance>
+        <instance episode="11">
+            <utterance>If that were true, how could I know every... America leader, for the next 80 years?</utterance>
+            <actual explicit="true" targetspan="43~56">America leader</actual>
+            <correct explicit="false">president</correct>
+        </instance>
+        <instance episode="11">
+            <utterance>Okay fine! Bad... picture!</utterance>
+            <actual explicit="true" targetspan="17~23">picture</actual>
+            <correct explicit="false">example</correct>
+        </instance> 
     </lexical>
     <omission>
     </omission>

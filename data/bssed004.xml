@@ -1,0 +1,51 @@
+<subject>
+    <TAM>
+        <instance episode="17">
+            <utterance>No one knows where they're gone... going.</utterance>
+            <actual explicit="true" grammatical="false" tense="present" aspect="perfect" voice="active" targetspan="19~30" aux="are">they're gone [expobj]</actual>
+            <correct explicit="true" tense="present" aspect="progressive" voice="active" targetspan="30~34" aux="are">[impsubj] [impaux] going</correct>
+        </instance>
+        <instance episode="17">
+            <utterance>I'm not quite as young as I will be... am, have, used to be</utterance>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="26~34" aux="will">I will be [expobj]</actual>
+            <actual explicit="false" tense="present" aspect="unmarked" voice="active" targetspan="29~30">[impsubj] am [impobj]</actual>
+            <actual explicit="false" tense="present" aspect="perfect" voice="active" targetspan="33~36">[impsubj] have [verb]</actual>
+            <correct explicit="true" tense="present" aspect="progressive" voice="active" targetspan="49~58" aux="used to">[implsubj] used to be [expobj]</correct>
+        </instance>
+    </TAM>
+    <lexical>
+    </lexical>
+    <omission>
+        <instance episode="17">
+            <utterance>Don't... allow... to happen...</utterance>
+            <actual targetspan="17" missing="O"></actual> <!--the space between words where the word should go-->
+            <correct>the experiments<correct>
+        </instance>
+        <instance episode="17">
+            <utterance>Mm... I should have stopped...</utterance>
+            <actual targetspan="19" missing="O"></actual> <!--the space between words where the word should go-->
+            <correct>the experiments<correct>
+        </instance>
+        <instance episode="17">
+            <utterance>Not the same one. Wooden. Had made here...
+                <precedent>... A Rubik's cube?</precedent>
+            </utterance>
+            <actual targetspan="17" missing="S V"></actual> <!--the space between words where the word should go-->
+            <correct>It is<correct>
+        </instance>
+        <instance episode="17">
+            <utterance>Not the same one. Wooden. Had made here...
+                <precedent>... A Rubik's cube?</precedent>
+            </utterance>
+            <actual targetspan="25" missing="S"></actual> <!--the space between words where the word should go-->
+            <correct>I<correct>
+        </instance>
+        <instance episode="17">
+            <utterance>Not the same one. Wooden. Had made here...
+                <precedent>... A Rubik's cube?</precedent>
+            </utterance>
+            <actual targetspan="29" missing="O"></actual> <!--the space between words where the word should go-->
+            <correct>it<correct>
+        </instance>
+    </omission>
+</subject>
