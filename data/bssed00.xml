@@ -48,6 +48,7 @@
             <actual explicit="true" targetspan="17~23">picture</actual>
             <correct explicit="false">example</correct>
         </instance> 
+        <!--20: P: Butterfly Syndrome? SG: What? Oh, no. Just feeling really weird...-->
     </lexical>
     <omission>
     </omission>

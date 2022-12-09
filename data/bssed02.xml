@@ -6,8 +6,228 @@
             <actual explicit="false" tense="present" aspect="perfect" voice="active" targetspan="37~65" aux="have">[impsubj] Have [verb]</actual>
             <correct explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="85~107" aux="will">[impsubj] Hope they'll believe me</correct>
         </instance>
+        <!--19: I try not to, if that makes any sense. If think about it, that just makes it worse. Makes me worse, like the worst headache you can imagine. Like driving in the dark, through a blizzard, with the lights off.-->
+        <instance episode="22"> <!--note: petra corrects her on this one-->
+            <utterance>I'll have had to put my subjects through similar testing, and... I'm sorry. You didn't deserve that.</utterance>
+            <actual explicit="true" tense="future" aspect="perfect" voice="active" targetspan="0~19" aux="will have had to">I'll have had to put [expobj]</actual>
+            <correct explicit="false" tense="present" aspect="perfect" voice="active" aux="have had to">I have had to put</correct>
+        </instance>
+        <instance episode="22"> <!--note: she corrects herself in a subsequent line after petra questions her-->
+            <utterance>Won't be seeing any signs of ODAR on our tail, if that's what you mean.</utterance> 
+            <actual explicit="false" tense="future" aspect="progressive" voice="active" targetspan="0~14" aux="won't be">[impsubj] won't be seeing [expobj]</actual>
+            <correct explicit="false" tense="present" aspect="progressive" voice="active" aux="am">I'm not seeing [expobj]</correct>
+        </instance>
+        <instance episode="22"> <!--note: (future-)petra questions her-->
+            <utterance>Some rest will be nice. We'll have been up all night.</utterance> 
+            <actual explicit="true" tense="future" aspect="perfect" voice="active" targetspan="24~41" aux="won't be">We'll have been up [adv]</actual>
+            <correct explicit="false" tense="present" aspect="perfect" voice="active" aux="am">We've been up [adv]</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>What will you be doing at my house??!</utterance>  <!--question!-->
+            <actual explicit="true" tense="future" aspect="progressive" voice="active" targetspan="0~21" aux="will be">What will you be doing</actual>
+            <correct explicit="false" tense="present" aspect="progressive" voice="active" aux="be">What are you doing</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Who the hell were you?</utterance>  <!--question!-->
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="0~20">Who [adv] were you</actual>
+            <correct explicit="false" tense="present" aspect="progressive" voice="active">Who [adv] are you</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Will you have been followed?</utterance>  <!--question!-->
+            <actual explicit="true" tense="future" aspect="perfect" voice="passive" targetspan="0~26" aux="will have be">Will you have been followed</actual>
+            <correct explicit="false" tense="present" aspect="perfect" voice="passive" aux="have be">Have you been followed</correct> <!--check which is correct-->
+            <correct explicit="false" tense="past" aspect="unmarked" voice="passive" aux="be">Were you followed</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Are we meeting?
+                <precedent>Have we met?</precedent>
+            </utterance>  <!--correct *precedes* disordered, and all *kind of* make sense-->
+            <actual explicit="true" tense="present" aspect="progressive" voice="active" targetspan="0~13">Are we meeting</actual>
+            <correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="0~14">Have we met</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Will we meet?
+                <precedent>Have we met? Are we meeting?</precedent>
+            </utterance>  <!--correct *precedes* disordered, and all *kind of* make sense-->
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~11">Will we meet</actual>
+            <correct explicit="true" tense="present" aspect="perfect" voice="active" targetspan="0~14">Have we met</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>June and Lou will both promise to me that I will never... would, never have to participate in your escapades again.</utterance>  <!--note "promise to me"-->
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~35" aux="will">[expsubj] will [adv] promise to me</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">[expsubj] [adv] promised to me</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>June and Lou will both promise to me that I will never... would, never have to participate in your escapades again.</utterance>  <!--note "promise to me"-->
+            <actual explicit="false" tense="future" aspect="unmarked" voice="active" targetspan="42~53" aux="will">I will [adv] [impverb]</actual>
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">[impsubj] would [adv] have to participate</correct> <!--check aspect-->
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'll believe that my precise words are: ...
+                <precedent>June and Lou will both promise to me that I will never... would, never have to participate in your escapades again.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~11" aux="will">I will believe [expobj]</actual>
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">I believe [expobj]</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'll believe that my precise words are: ...
+                <precedent>June and Lou will both promise to me that I will never... would, never have to participate in your escapades again.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="18~37">[expsubj] are [expobj]</actual>
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">[expsubj] were [expobj]</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>They must not be as capable as they promise.
+                <precedent>June and Lou will both promise to me that I will never... would, never have to participate in your escapades again.
+                I'll believe that my precise words are: Send me as far away as you can, hide me as deeply as you can.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="31~42">they promise</actual>
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">they promised</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Or, at the very least, my help to have solved it.
+                <precedent>You need the cure for Butterfly Syndrome.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="present" aspect="perfect" voice="active" targetspan="31~42" aux="to have">[expsubj] to have solved it</actual> <!--marking this subject as explicit because its nullness is in fact licensed by the grammar-->
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active" aux="to">to cure it</correct> <!--see lexical-->
+        </instance>
+        <instance episode="34"> 
+            <utterance>You'll have problems? Go find him.
+                <precedent>You think I'm the final word on Butterfly Syndrome? Don't you remember? I was the experiment. I may have produced work, but only in the service of Dr. Carling's research.</precedent>
+            </utterance> 
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~19" aux="will">you will have problems</actual> 
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">you have problems</correct> <!--more natural: "you've got problems"-->
+        </instance>
+        <instance episode="34"> 
+            <utterance>I knew, I knew... know.</utterance> 
+            <actual explicit="true" tense="past" aspect="unmarked" voice="active" targetspan="0~5">I knew</actual> 
+            <correct explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="18~21">[impsubj] know</correct> 
+        </instance>
+        <instance episode="34"> 
+            <utterance>I understand that if you sought me and found me, you have few other options, but give an old woman the right to have been grumpy.</utterance> 
+            <actual explicit="true" tense="present" aspect="perfect" voice="active" targetspan="119~127">[expsubj] to have been grumpy</actual>  <!--[expsubj] because subj's nullness is grammatical-->
+            <correct explicit="false" tense="present" aspect="unmarked" voice="active">[expsubj] to be grumpy</correct> 
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'll be in the middle of a crossword when you'll arrive</utterance> 
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~6" aux="will">I will be [expobj]</actual>  <!--[expsubj] because subj's nullness is grammatical-->
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">I was [expobj]</correct> 
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'll be in the middle of a crossword when you'll arrive</utterance> 
+            <actual explicit="true" grammatical="false" tense="future" aspect="unmarked" voice="active" targetspan="0~6" aux="will">you will arrive</actual>  <!--[expsubj] because subj's nullness is grammatical-->
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">you arrived</correct> 
+        </instance>
+        <instance episode="34"> 
+            <utterance>Searched for something</utterance>
+            <actual>[impsubj] searching for something</actual>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Where will it be? Where will it be?</utterance>
+            <correct>Where is it?</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Ah! It is found.</utterance> <!--might not even be pathological, just odd-->
+        </instance>
+        <instance episode="34"> 
+            <utterance>Anything's a prophecy if you say it'll be.</utterance> <!--might not even be pathological, just odd-->
+            <correct>Anything can be a prophecy if you say it is.</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>for reasons you could expect, I haven't often get mail.</utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>For that, I will thank you.</utterance>
+            <correct>I thank you.</correct>
+        </instance>
+        <instance episode="34"> 
+            <utterance>You're not out of the woods yet. Something will be missing that I can't replicate here.</utterance> <!--might be odd, but not pathological-->
+        </instance>
+        <instance episode="34"> 
+            <utterance>I was too.
+                <precedent>I'm nervous about what you're implying, Sally.</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>What have you done next?</utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'd suppose not.
+                <precedent>Do you actually want to know?</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Still thinking. I'm got used to this by now but... thinking.</utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I figured it out, don't worrying.
+                <precedent>But after we all leave, who will-</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I haven't had a brother and it was for emergencies only.
+                <precedent>Elbourne, I thought you'd want to avoid a phone line entirely, "Big Brother is listening" and all that?</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'll have a feeling Nikhil's caller believes they have one.
+                <precedent>I haven't had a brother and it was for emergencies only.</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'm not going into hiding so you all could brought the trouble to me.
+                <precedent>How sweet. But I'd like to avoid the wrath of Petra as long as humanly possible</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>I'm not going into hiding so you all could brought the trouble to me.
+                <precedent>How sweet. But I'd like to avoid the wrath of Petra as long as humanly possible</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>So, here's what we've done
+                <precedent>I'm not going into hiding so you all could brought the trouble to me.</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all
+                <precedent>So, here's what we've done</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all
+                <precedent>So, here's what we've done</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all
+                <precedent>So, here's what we've done</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Once that is finishing, you all can left and scheming elsewhere.
+                <precedent>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Once that is finishing, you all can left and scheming elsewhere.
+                <precedent>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all</precedent>
+            </utterance>
+        </instance>
+        <instance episode="34"> 
+            <utterance>Once that is finishing, you all can left and scheming elsewhere.
+                <precedent>We finish cooking and then sat down and eat this very nice meal that I will graciously sharing with you all</precedent>
+            </utterance>
+        </instance>
     </TAM>
     <lexical>
+        <instance episode="34">
+            <utterance>Or, at the very least, my help to have solved it. <!--see TAM-->
+                <precedent>You need the cure for Butterfly Syndrome.</precedent>
+            </utterance>
+            <actual explicit="true" targetspan="19~24">solved</actual>
+            <correct explicit="false">cured</correct>
+        </instance>
     </lexical>
     <omission>
     </omission>

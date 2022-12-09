@@ -1,0 +1,23 @@
+<subject>
+    <TAM>
+        <instance episode="34">
+            <utterance>I'll get your bottle.</utterance>
+            <actual explicit="true" tense="future" aspect="unmarked" voice="active" targetspan="0~19" aux="will">I'll get your bottle.</actual>
+            <correct explicit="false" tense="past" aspect="unmarked" voice="active">I got your bottle.</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Am I better when I had will... woken up?</utterance>
+            <actual explicit="true" tense="present" aspect="unmarked" voice="active" targetspan="0~10">Am I better</actual>
+            <correct explicit="false" tense="future" aspect="unmarked" voice="active" aux="will">Will I be better</correct>
+        </instance>
+        <instance episode="34">
+            <utterance>Am I better when I had will... woken up?</utterance>
+            <actual explicit="true" grammatical="false" tense="past future" aspect="perfect" voice="active" targetspan="17~38" aux="had will">I had will woken up</actual>
+            <correct explicit="false" tense="future" aspect="unmarked" voice="active">I wake up</correct>
+        </instance>
+    </TAM>
+    <lexical>
+    </lexical>
+    <omission>
+    </omission>
+</subject>
